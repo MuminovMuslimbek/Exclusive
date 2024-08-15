@@ -2,6 +2,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            list-style: none;
         }
         
          ::selection {
@@ -539,6 +540,21 @@
             column-gap: 87px;
         }
         
+        .footer-main ul li a {
+            list-style: none;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fafafa;
+            text-decoration: none;
+        }
+        
+        .footer-main ul li a:hover {
+            text-decoration: underline;
+            color: #c1c1c1;
+        }
+        
         .footer-section {
             max-width: 217px;
             display: flex;
@@ -551,6 +567,15 @@
             display: flex;
             flex-direction: column;
             row-gap: 24px;
+        }
+        
+        .footer-section1 p {
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: -12px;
+            color: #fafafa;
         }
         
         .footer-section2 {
@@ -572,6 +597,15 @@
             display: flex;
             flex-direction: column;
             row-gap: 24px;
+        }
+        
+        .footer-section4 p {
+            font-family: "Poppins";
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            color: #fafafa;
+            opacity: 70%;
         }
         
         .footer-section h2 {
@@ -624,24 +658,43 @@
         }
         
         .footer-section form input {
-            padding: 5px;
-            border: none;
+            padding: 12px 16px;
+            border: 1px solid #fff;
+            border-right: none;
             border-radius: 3px;
             margin-right: 5px;
+            background-color: #000;
+            outline: none;
+            color: #fff;
+            font-size: 18px;
         }
         
         .footer-section form button {
-            background-color: #333;
-            border: none;
+            background-color: #000;
+            border: 1px solid #fff;
+            border-left: none;
             color: white;
-            padding: 5px 10px;
+            padding: 18px 10px;
             border-radius: 3px;
             cursor: pointer;
+            margin-left: -10px;
+        }
+        
+        .app-links {
+            display: flex;
+            column-gap: 8px;
+            margin-top: -12px;
+        }
+        
+        .app-links-sayt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 4px;
         }
         
         .app-links a {
             display: inline-block;
-            margin-right: 10px;
         }
         
         .social-media a {
@@ -663,6 +716,17 @@
             color: #fff;
             text-align: center;
             opacity: 20%;
+        }
+        
+        .social-media {
+            display: flex;
+            column-gap: 24px;
+            align-items: center;
+        }
+        
+        .social-media a:hover {
+            transition: 0.3s;
+            transform: scale(1.3);
         }
         
          ::-webkit-scrollbar {
