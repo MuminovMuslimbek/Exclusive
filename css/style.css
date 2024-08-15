@@ -15,6 +15,107 @@
             padding: 0 15px;
         }
         
+        .header {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            padding: 40px 0 16px 0;
+            margin-bottom: 50px;
+        }
+        
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .header h1 {
+            max-width: 118px;
+            font-family: "Inter";
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: #000;
+        }
+        
+        .nav {
+            max-width: 367px;
+        }
+        
+        .nav ul {
+            max-width: 367px;
+            display: flex;
+            list-style-type: none;
+            column-gap: 48px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav ul li a {
+            max-width: 60px;
+            text-decoration: none;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #000;
+        }
+        
+        .footer-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        .search {
+            max-width: 243px;
+            position: relative;
+        }
+        
+        .search img {
+            max-width: 16px;
+            position: absolute;
+            top: 7px;
+            right: 12px;
+        }
+        
+        .search input {
+            max-width: 243px;
+            padding: 10px 30px 10px 20px;
+            border: none;
+            background-color: #F5F5F5;
+            border-radius: 4px;
+            outline: none;
+            color: #DB4444;
+        }
+        
+        .search input:focus {
+            border: 1px solid #DB4444;
+        }
+        
+        .search input::placeholder {
+            max-width: 153px;
+            font-family: "Poppins";
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            opacity: 50%;
+            color: #000;
+        }
+        
+        .search button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .icons img {
+            max-width: 20px;
+            height: 20px;
+        }
+        
+        .icons a {
+            margin-left: 20px;
+        }
+        
         .categories {
             background-color: #fff;
         }
@@ -161,20 +262,22 @@
             font-weight: 500;
             line-height: 24px;
             color: #fafafa;
-            transition: 0.3s;
+            transition: 0.5s;
         }
         
         .products-top button:hover {
             background-color: #c1c1c1;
             color: #DB4444;
             border: 2px solid #DB4444;
-            border-radius: 20px;
+            border-radius: 50px;
             cursor: pointer;
             box-shadow: 2px 2px 20px #231C2F;
         }
         
         .products-top button:active {
+            transition: 0.3s;
             transform: scale(0.8);
+            background-color: #3B3B3B;
         }
         
         .products-bottom-card {
@@ -192,6 +295,11 @@
         
         .products-card-top img {
             max-width: 140px;
+            transition: 0.3s;
+        }
+        
+        .products-card-top img:hover {
+            transform: scale(1.1);
         }
         
         .products-card-top-icon {
@@ -224,7 +332,7 @@
         }
         
         .products-card-bottom {
-            max-width: 176px;
+            max-width: 100%;
             display: flex;
             flex-direction: column;
             row-gap: 8px;
@@ -281,6 +389,16 @@
         
         .enhance-main img {
             max-width: 540px;
+            transition: 0.5s;
+            background-image: url(../imges/shadow.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        /* Aka positionlar mavzusini tashlagan ediz zo`r tushunarli chiqibdi raxmat mana ishlatdim */
+        
+        .enhance-main img:hover {
+            transform: scale(1.2);
         }
         
         .enhance-left h6 {
@@ -353,7 +471,7 @@
         
         .enhance-left button:hover {
             border: 2px solid #00FF66;
-            border-radius: 20px;
+            border-radius: 50px;
             background-color: #b2b2b2;
             color: #00FF66;
             box-shadow: 2px 2px 20px #fafafa;
@@ -362,6 +480,189 @@
         
         .enhance-left button:active {
             transform: scale(0.8);
+            background-color: #DB4444;
+        }
+        
+        .explore {
+            background-color: #fff;
+            padding-bottom: 140px;
+        }
+        
+        .exlore-main {
+            display: flex;
+            flex-direction: column;
+            row-gap: 60px;
+        }
+        
+        .explore-btn {
+            max-width: 234px;
+            padding: 16px 45px;
+            margin: 0 auto;
+            background-color: #DB4444;
+            border: none;
+            border-radius: 4px;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #fafafa;
+            transition: 0.3s;
+        }
+        
+        .explore-btn:hover {
+            background-color: #b2b2b2;
+            color: #DB4444;
+            border: 2px solid #DB4444;
+            border-radius: 50px;
+            padding: 16px 45px;
+            cursor: pointer;
+        }
+        
+        .explore-btn:active {
+            transform: scale(0.8);
+            background-color: #3B3B3B;
+        }
+        
+        .footer {
+            background-color: #000;
+            color: white;
+            padding: 80px 0 24px 0;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 60px;
+        }
+        
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 87px;
+        }
+        
+        .footer-section {
+            max-width: 217px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        
+        .footer-section1 {
+            max-width: 175px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        
+        .footer-section2 {
+            max-width: 123px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        
+        .footer-section3 {
+            max-width: 109px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        
+        .footer-section4 {
+            max-width: 198px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        
+        .footer-section h2 {
+            max-width: 118px;
+            font-family: "Inter";
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: #fafafa;
+        }
+        
+        .footer-section p {
+            font-family: "Poppins";
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #fafafa;
+        }
+        
+        .footer h6 {
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fafafa;
+        }
+        
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-section form {
+            display: flex;
+        }
+        
+        .footer-section form input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+        
+        .footer-section form button {
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .app-links a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .footer-bottom {
+            padding-top: 16px;
+        }
+        
+        .footer-bottom p {
+            margin: 0 auto;
+            max-width: 337px;
+            font-family: "Poppins";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #fff;
+            text-align: center;
+            opacity: 20%;
         }
         
          ::-webkit-scrollbar {
@@ -399,6 +700,17 @@
         }
         
         @media screen and (max-width:540px) {
+            .nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+            .nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .search {
+                margin-top: 10px;
+            }
             .categories-top {
                 display: flex;
                 flex-direction: column;
@@ -416,6 +728,10 @@
                 row-gap: 30px;
             }
             .enhance-main img {
-                max-width: 350px;
+                max-width: 300px;
+            }
+            .footer .container {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
